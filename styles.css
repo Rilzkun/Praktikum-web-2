@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --warna-nav: #2c3e50;
+    --warna-biru: #3498db;
+    --warna-aksen: #f39c12;
+    --warna-background: #f9f9f9;
+    --warna-teks: #2d2d2d;
+    --warna-putih: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: var(--warna-background);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--warna-nav);
+    color: var(--warna-putih);
+    padding: 1rem 0;
+}
+
+.header-dalam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+}
+
+.item-nav {
+    margin-left: 1.5rem;
+}
+
+.link-nav {
+    color: var(--warna-putih);
+    text-decoration: none;
+}
+
+.link-nav:hover {
+    color: var(--warna-aksen);
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: var(--warna-putih);
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, var(--warna-biru), var(--warna-nav));
+    color: var(--warna-putih);
+    border-radius: 8px;
+}
+
+.grid-kartu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.kartu {
+    background-color: var(--warna-putih);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* EFEK NAIK */
+.kartu:hover {
+    transform: translateY(-10px);
+}
+
+.gambar-negara {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.isi-kartu {
+    padding: 1.2rem;
+}
+
+.tombol {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--warna-biru);
+    color: var(--warna-putih);
+    border: none;
+    border-radius: 30px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.tombol:hover {
+    background-color: var(--warna-aksen);
+}
+
+footer {
+    background-color: var(--warna-nav);
+    color: var(--warna-putih);
+    padding: 2rem 0;
+    text-align: center;
+}
